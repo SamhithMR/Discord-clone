@@ -4,10 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
     <title>Discord | Your Place to Talk and Hang Out</title>
-</head>
-<body>
+    <link rel="shortcut icon" href="https://discord.com/assets/847541504914fd33810e70a0ea73177e.ico"/>
     
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@400;500;700;900&family=Rubik:wght@900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            outline: 0;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+    
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="min-h-screen bg-background w-full text-[#fff] flex lg:items-center justify-center relative overflow-hidden z-10 lg:pt-0 pt-20">
+        <!-- navbar -->
+        <div class="flex justify-between items-center px-8 py-6 absolute top-0 left-0 w-full">
+            <div class="logo"><a href=""><img src="./assets/discord.svg" alt="discord logo"></a></div>
+            <nav id="nav" class="hidden md:block">
+              <ul class="list-none flex gap-6 font-sans font-medium">
+                <li><a href="" class="hover:border-b-2">Download</a></li>
+                <li><a href="" class="hover:border-b-2">Nitro</a></li>
+                <li><a href="" class="hover:border-b-2">Discover</a></li>
+                <li><a href="" class="hover:border-b-2">Safety</a></li>
+                <li><a href="" class="hover:border-b-2">Support</a></li>
+                <li><a href="" class="hover:border-b-2">Blog</a></li>
+                <li><a href="" class="hover:border-b-2">Careers</a></li>
+              </ul>
+            </nav>
+            <div class="login px-3 py-2 bg-[#fff] rounded-3xl text-black_text hover:text-blue_button text-base hover:drop-shadow-xl">
+              <button class="text-sm">Open Discord</button>
+            </div>
+            <button id="hamburger" class="block md:hidden focus:outline-none">
+              <img src="./assets/hamburg.svg" alt="" srcset="">
+            </button>
+          </div>
+          
+        <div class="sidebar absolute right-0 top-0 min-w-[40%] min-h-screen bg-[#fff] rounded-md hidden md:visible z-10 flex flex-col justify-between items-between">
+            <div class="flex gap-2 justify-between py-5 px-5 border-b-2 border-gray-500">
+                <img src="./assets/discord-1.svg" class="invert" alt="" srcset="">
+                <button class="close text-[#000] bg-red">close</button>
+            </div>
+            <div class="px-4 py-3 w-[100%]">
+                <ul class="list-none w-[100%]">
+                    <li class="w-[100%] py-2 hover:bg-[#d6d5d2] rounded-md hover:text-blue_button"><a href="" class="w-[100%]  text-[#000] ">Home</a></li>
+                    <li class="w-[100%] py-2 hover:bg-[#d6d5d2] rounded-md hover:text-blue_button"><a href="" class="w-[100%]  text-[#000] ">Download</a></li>
+                    <li class="w-[100%] py-2 hover:bg-[#d6d5d2] rounded-md hover:text-blue_button"><a href="" class="w-[100%]  text-[#000] ">Nitro</a></li>
+                    <li class="w-[100%] py-2 hover:bg-[#d6d5d2] rounded-md hover:text-blue_button"><a href="" class="w-[100%]  text-[#000] ">Discover</a></li>
+                    <li class="w-[100%] py-2 hover:bg-[#d6d5d2] rounded-md hover:text-blue_button"><a href="" class="w-[100%]  text-[#000] ">Safety</a></li>
+                    <li class="w-[100%] py-2 hover:bg-[#d6d5d2] rounded-md hover:text-blue_button"><a href="" class="w-[100%]  text-[#000] ">Mod Academy</a></li>
+                    <li class="w-[100%] py-2 hover:bg-[#d6d5d2] rounded-md hover:text-blue_button"><a href="" class="w-[100%]  text-[#000] ">Support</a></li>
+                    <li class="w-[100%] py-2 hover:bg-[#d6d5d2] rounded-md hover:text-blue_button"><a href="" class="w-[100%]  text-[#000] ">Blog</a></li>
+                    <li class="w-[100%] py-2 hover:bg-[#d6d5d2] rounded-md hover:text-blue_button"><a href="" class="w-[100%]  text-[#000] ">Careers</a></li>
+                </ul>
+            </div>
+            <button class="px-4 py-3 bg-background self-end block text-[#fff] rounded-3xl flex gap-2 hover:text-blue_button  hover:drop-shadow-xl"><img src="./assets/download_b.svg" alt=""> Download for Windows</button>
+        </div>
+
+        <!-- header content -->
+        <div class="md:w-[60%] w-[90%] mx-auto text-center flex flex-col items-center">
+            <h1 class="font-Montserrat font-black md:text-[10vh] text-[5vh]">IMAGIN A PLACE...</h1>
+            <p class="py-5 md:w-[95%] w-[100%] leading-7 md:text-lg text-sm">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
+            <div class="flex gap-2 justify-center flex-col md:flex-row w-[60%] md:w-[100%]">
+                <button class="px-4 md:py-3 py-2 bg-[#fff] rounded-3xl text-black_text flex gap-2 hover:text-blue_button  hover:drop-shadow-xl"><img src="./assets/download_b.svg" alt=""> Download for Windows</button>
+                <button class="px-4 md:py-3 py-2 bg-[#fff] rounded-3xl bg-black_button text-[#fff]  hover:drop-shadow-xl">Open Discord in you browser</button>
+            </div>
+            <div class="md:hidden visible w-[30vh]"></div>
+        </div>
+
+        <img src="./assets/homePage_style2.svg" class="absolute md:left-[-25%] bottom-0 -z-9 md:w-[50%] w-[70%] md:hidden lg:block">
+        <img src="./assets/homePage_style3.svg" class="absolute md:right-[-25%] bottom-0 -z-9 md:w-[60%] lg:w-[50%] hidden md:block" alt="">
+        <img src="./assets/homePage_style1.svg" class="absolute bottom-0 object-cover min-h-screen -z-10" alt="">
+        
+    </div>
+    <script>
+        const hamburger = document.querySelector("#hamburger");
+        const sidebar = document.querySelector(".sidebar");
+        const close = document.querySelector(".close");
+        const login = document.querySelector(".login");
+
+        hamburger.addEventListener("click", function() {
+            sidebar.style.display = "block";
+            login.style.display = "none";
+        });
+
+        close.addEventListener("click", function() {
+            sidebar.style.display = "none";
+            login.style.display = "block";
+        });
+
+   </script> 
 </body>
 </html>
