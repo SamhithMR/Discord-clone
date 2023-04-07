@@ -85,12 +85,55 @@
             <div class="md:hidden visible w-[30vh]"></div>
         </div>
 
+        <!-- svg iamges -->
         <img src="./assets/homePage_style2.svg" class="absolute md:left-[-25%] bottom-0 -z-9 md:w-[50%] w-[70%] md:hidden lg:block">
-        <img src="./assets/homePage_style3.svg" class="absolute md:right-[-25%] bottom-0 -z-9 md:w-[60%] lg:w-[50%] hidden md:block" alt="">
-        <img src="./assets/homePage_style1.svg" class="absolute bottom-0 object-cover min-h-screen -z-10" alt="">
+        <img src="./assets/homePage_style3.svg" class="absolute md:right-[-25%] bottom-0 -z-9 md:w-[60%] lg:w-[50%] hidden md:block">
+        <img src="./assets/homePage_style1.svg" class="absolute bottom-0 object-cover min-h-screen -z-10">
         
     </div>
+
+    <!-- section 2-->
+    <div class="invite grid md:grid-cols-2 lg:p-5 p-2 my-2 gap-5">
+        <img src="./assets/svg1.svg" alt="" srcset="">
+        <div class="flex items-center justify-center flex-col lg:w-[60%] mx-auto">
+            <h2 class="font-items md:text-[8vh] text-[5vh] font-bold">Create an invite-only place where you belong</h2>
+            <p class="text-[2.5vh]">Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
+        </div>
+    </div>
+
+    <!-- section 3-->
+    <div class="invite grid md:grid-cols-2 lg:p-5 p-2 my-2 gap-5 bg-[#F6F6F6]">
+        <div class="flex items-center justify-center flex-col lg:w-[60%] mx-auto">
+            <h2 class="font-items md:text-[8vh] text-[5vh] font-bold">Where hanging out is easy</h2>
+            <p class="text-[2.5vh]">Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.</p>
+        </div>
+        <img src="./assets/svg2.svg" alt="" srcset="">
+    </div>
+
+    <!-- section 4-->
+    <div class="invite grid md:grid-cols-2 lg:p-5 p-2 my-2 gap-5 ">
+        <img src="./assets/svg3.svg" alt="" srcset="">
+        <div class="flex items-center justify-center flex-col lg:w-[60%] mx-auto">
+            <h2 class="font-bold md:text-[8vh] text-[5vh] font-bold">From few to a fandom</h2>
+            <p class="text-[2.5vh]">Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</p>
+        </div>
+    </div>
+
+    <!-- section 5-->
+    <div class=" bg-[#F6F6F6] flex flex-col align-center justify-center p-[1rem]">
+        <h2 class="md:text-[8vh] text-[5vh] font-black font-Montserrat text-center">RELIABLE TECH FOR STAYING CLOSE</h2>
+        <P class="md:w-[70%] mx-auto my-5 font-thin text-[2.5vh] tracking-wide text-center">Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</P>
+        <img src="./assets/svg5.svg" alt="" srcset="">
+        <div class="relative flex justify-center my-[5rem] w-[100%] flex-col items-center">
+            <h2 class="my-[1rem] font-Montserrat text-2xl">Ready to start your journey?</h2>
+            <button class="px-4 md:py-3 py-2 bg-background  rounded-3xl text-[#fff] hover:bg-blue_button flex gap-2  hover:drop-shadow-xl x-10"><img src="./assets/download_w.svg" alt=""> Download for Windows</button>
+            <img src="./assets/starts.svg" class="absolute" alt="" srcset="">
+        </div>
+    </div>
+
+
     <script>
+        // scritp to hangle hamburger
         const hamburger = document.querySelector("#hamburger");
         const sidebar = document.querySelector(".sidebar");
         const close = document.querySelector(".close");
@@ -105,7 +148,6 @@
             sidebar.style.display = "none";
             login.style.display = "block";
         });
-
    </script> 
 </body>
 </html>
